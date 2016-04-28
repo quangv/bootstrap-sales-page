@@ -11,9 +11,57 @@
 
     <style>
       .section {
-        padding-top: 3em;
-        padding-bottom: 3em;
+        padding-top: 6em;
+        padding-bottom: 6em;
       }
+
+      blockquote {
+        border-left-width: 0;
+        font-size: 1.5em;
+        font-style: italic;
+      }
+
+      .features {
+        text-align: center;
+      }
+      .features h1 {
+      }
+      .features .glyphicon {
+        font-size: 8em;
+        margin-top: 0.5em;
+        margin-bottom: 0.3em;
+      }
+      .features p {
+        text-align: left;
+      }
+
+      .prices h3 {
+        text-align: center;
+      }
+      .prices .price {
+        text-align: center;
+        font-weight: 700;
+        display: block;
+        font-size: 1.5em;
+      }
+      .prices ul {
+        margin-top: 1em;
+        list-style-type: none;  
+      }
+      .prices li {
+        padding: 0.7em;
+        border-top: 1px solid lightgray;
+      }
+      .prices .btn {
+        width: 100%;
+      }
+
+      .optin {
+        border: 1px solid gray;
+        border-radius: 0.5em;
+        padding-bottom: 1em;
+      }
+
     </style>
   </head>
   <body>
@@ -27,7 +75,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Pro Notify</a>
+          <a class="navbar-brand" href="#">Pro Notify Widget</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,54 +94,137 @@
 
       <div class="row section">
         <div class="col-sm-6">
-          <h1>Product Notify</h1>
-          <p>Always be informed.</p>
-          <a href="#optin" class="btn btn-primary">Try it Now</a>
+          <h1>Product Notify Widget</h1>
+          <p>One morning, when Gregor Samsa woke from troubled 
+          dreams.</p>
+
+          <a href="#optin" class="btn btn-lg btn-primary">Try it Now</a>
         </div><!--/.col-->
       </div><!--/.row-->
 
       <div class="row section">
-        <div class="col-sm-6 col-sm-offset-6">
+        <div class="col-sm-5 col-sm-offset-6">
           <a name="overview"></a>
-          <h1>Overview</h1>
-          <p>Always be informed.</p>
+          <h1>One morning, when Gregor Samsa woke from troubled dreams.</h1>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <h2>Get notified quick</h2>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+            <div class="col-sm-6">
+              <h2>Notified Instantly</h2>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+          </div>
+
         </div><!--/.col-->
       </div><!--/.row-->
 
       <div class="row section">
-        <div class="col-sm-6">
+        <div class="col-sm-4">
           <a name="testimonial"></a>
-          <h1>Testimonial</h1>
-          <button class="btn btn-primary">Try it Now</button>
+          <blockquote>&ldquo;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&rdquo;</blockquote>
         </div><!--/.col-->
       </div><!--/.row-->
 
       <div class="row section">
-        <div class="col-sm-6 col-sm-offset-6">
+        <div class="col-sm-12 features">
           <a name="features"></a>
           <h1>Features</h1>
-          <p>Always be informed.</p>
-          <button class="btn btn-primary">Try it Now</button>
+          <div class="row">
+            <div class="col-sm-4">
+              <span class="glyphicon glyphicon-cloud"></span>
+              <p><b>On the cloud.</b>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+            <div class="col-sm-4">
+              <span class="glyphicon glyphicon-search"></span>
+              <p><b>Search.</b>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+            <div class="col-sm-4">
+              <span class="glyphicon glyphicon-off"></span>
+              <p><b>Remote control.</b>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <span class="glyphicon glyphicon-camera"></span>
+              <p><b>Sceenshots.</b>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+            <div class="col-sm-4">
+              <span class="glyphicon glyphicon-calendar"></span>
+              <p><b>Schedule.</b>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+            <div class="col-sm-4">
+              <span class="glyphicon glyphicon-shopping-cart"></span>
+              <p><b>E-commerce.</b>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+          </div>
         </div><!--/.col-->
       </div><!--/.row-->
 
-      <div class="row section">
-        <div class="col-sm-6">
+      <div class="row section prices">
+        <div class="col-sm-10 col-sm-offset-1">
           <a name="prices"></a>
-          <h1>Prices</h1>
-          <p>Always be informed.</p>
-          <button class="btn btn-primary">Try it Now</button>
+          <div class="row">
+            <div class="col-sm-4">
+              <h3>Personal</h3>
+              <span class="price">$9/month</span>
+              <ul>
+                <li><b>1 person</b> just individual</li>
+                <li><b>1k</b> monthly requests</li>
+                <li><b>6pm-9pm</b> support</li>
+                <li><a href="#optin" class="btn btn-md btn-primary">Start a Personal Account</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <h3>Business</h3>
+              <span class="price">$49/month</span>
+              <ul>
+                <li><b>10 people</b> small team</li>
+                <li><b>10k</b> monthly requests</li>
+                <li><b>9am-9pm</b> support</li>
+                <li><a href="#optin" class="btn btn-md btn-primary">Start a Business Account</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <h3>Corporate</h3>
+              <span class="price">$249/month</span>
+              <ul>
+                <li><b>100 people</b> big team</li>
+                <li><b>100k</b> monthly requests</li>
+                <li><b>24/7</b> support</li>
+                <li><a href="#optin" class="btn btn-md btn-primary">Start a Corporate Account</a></li>
+              </ul>
+            </div>
+          </div>
         </div><!--/.col-->
       </div><!--/.row-->
 
       <div class="row section">
-        <div class="col-sm-6 col-sm-offset-3">
+        <div class="col-sm-6 col-sm-offset-3 optin">
           <a name="optin"></a>
           <h1>Opt-in</h1>
-          <p>Always be informed.</p>
-          <button class="btn btn-primary">Try it Now</button>
+          <form>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="text" id="email" class="form-control" placeholder="Email" />
+            </div>
+            <button class="btn btn-primary btn-lg">Sign me Up</button>
+          </form>
         </div><!--/.col-->
       </div><!--/.row-->
+
+      <div class="row">
+        <footer class="col-sm-12">
+          &copy; 2016
+        </footer>
+      </div>
 
     </div><!--/.container-->
   </body>
