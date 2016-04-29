@@ -9,10 +9,13 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+
     <style>
       .section {
-        padding-top: 6em;
-        padding-bottom: 6em;
+        padding-top: 9em;
+        padding-bottom: 9em;
       }
 
       blockquote {
@@ -67,7 +70,38 @@
         max-height: 300px;
       }
 
+      #iphone {
+        opacity: 0.1;
+        left: -100px;
+        position: relative;
+        transform: rotate(-75deg);
+      }
+
+      #girl {
+        opacity: 0.1;
+        left: 150px;
+        position: relative;
+        transform: rotate(45deg);
+      }
+
     </style>
+
+    <script>
+      $(function(){
+        $('#iphone').on('inview', function(event, isInView){
+          if(isInView){
+            $(this).transition({x: 100});
+            $(this).transition({opacity: 1}, 1800);
+          }
+        });
+        $('#girl').on('inview', function(event, isInView){
+          if(isInView){
+            $(this).transition({x: "-150px"});
+            $(this).transition({opacity: 1}, 1800);
+          }
+        });
+      });
+    </script>
   </head>
   <body>
     <nav class="navbar navbar-default">
@@ -106,13 +140,13 @@
           <a href="#optin" class="btn btn-lg btn-primary">Try it Now</a>
         </div><!--/.col-->
         <div class="col-sm-4 col-sm-offset-1">
-          <img src="/images/chart.png" class="img" />
+          <img id="chart" src="/images/chart.png" class="img" />
         </div><!--/.col-->
       </div><!--/.row-->
 
       <div class="row section">
         <div class="col-sm-3 col-sm-offset-3">
-          <img src="/images/iphone.png" class="img" />
+          <img id="iphone" src="/images/iphone.png" class="img" />
         </div>
         <div class="col-sm-5">
           <a name="overview"></a>
@@ -139,7 +173,7 @@
           <blockquote>&ldquo;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&rdquo;</blockquote>
         </div><!--/.col-->
         <div class="col-sm-4 col-sm-offset-1">
-          <img src="/images/girl.png" class="img" />
+          <img id="girl" src="/images/girl.png" class="img" />
         </div><!--/.col-->
       </div><!--/.row-->
 
