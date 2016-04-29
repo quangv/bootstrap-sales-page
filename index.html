@@ -6,11 +6,10 @@
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.2/jquery.smooth-scroll.min.js"></script>
 
     <style>
       .section {
@@ -75,6 +74,7 @@
         left: -100px;
         position: relative;
         transform: rotate(-75deg);
+        margin-top: 2em;
       }
 
       #girl {
@@ -100,11 +100,13 @@
             $(this).transition({opacity: 1}, 1800);
           }
         });
+
+        $('a').smoothScroll();
       });
     </script>
   </head>
   <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -144,12 +146,11 @@
         </div><!--/.col-->
       </div><!--/.row-->
 
-      <div class="row section">
+      <div class="row section" id="overview">
         <div class="col-sm-3 col-sm-offset-3">
           <img id="iphone" src="/images/iphone.png" class="img" />
         </div>
         <div class="col-sm-5">
-          <a name="overview"></a>
           <h1>One morning, when Gregor Samsa woke from troubled dreams.</h1>
           <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
@@ -167,9 +168,8 @@
         </div><!--/.col-->
       </div><!--/.row-->
 
-      <div class="row section">
+      <div class="row section" id="testimonial">
         <div class="col-sm-4 col-sm-offset-2">
-          <a name="testimonial"></a>
           <blockquote>&ldquo;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&rdquo;</blockquote>
         </div><!--/.col-->
         <div class="col-sm-4 col-sm-offset-1">
@@ -177,9 +177,8 @@
         </div><!--/.col-->
       </div><!--/.row-->
 
-      <div class="row section">
+      <div class="row section" id="features">
         <div class="col-sm-12 features">
-          <a name="features"></a>
           <h1>Features</h1>
           <div class="row">
             <div class="col-sm-4">
@@ -212,9 +211,8 @@
         </div><!--/.col-->
       </div><!--/.row-->
 
-      <div class="row section prices">
+      <div class="row section prices" id="prices">
         <div class="col-sm-10 col-sm-offset-1">
-          <a name="prices"></a>
           <div class="row">
             <div class="col-sm-4">
               <h3>Personal</h3>
@@ -250,9 +248,8 @@
         </div><!--/.col-->
       </div><!--/.row-->
 
-      <div class="row section">
+      <div class="row section" id="optin">
         <div class="col-sm-6 col-sm-offset-3 optin">
-          <a name="optin"></a>
           <h1>Opt-in</h1>
           <form>
             <div class="form-group">
